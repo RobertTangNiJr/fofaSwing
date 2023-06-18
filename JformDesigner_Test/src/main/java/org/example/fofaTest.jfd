@@ -1,0 +1,251 @@
+JFDML JFormDesigner: "8.0.5.0.268" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x, comp tabbedPane1::t::1028:x}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space :::p, comp tabbedPane1::::706:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :::p, comp textField1::::757:x, space u:::p, comp button1:::p:50:p, space :::p, comp button2:::p::p, space :p:20:p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p::p, comp button2::b:p::p, comp button1::b:p::p, comp textField1::b:p::p}, space :::x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "查询条件 :"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "查询"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchContent", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchBtnAction", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "导出当前数据"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exportCSV", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "panel2"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {par l {seq l {space :p:56:p, comp label4:::p::p}, seq t {space :p:6:p, comp label5:::p:128:p}}, space s:::p, par t:::p {comp textField6::l::772:x, seq {comp textField2::::264:x, space :::p, comp label7:::p::p, space :::p, comp passwordField1:::p:464:p}}, space :::p, par l {comp button6:::p::p, comp button5::l:p::p}, space :::x}}"
+						"$verticalGroup": "par l {seq l {space :::p, par b {comp textField2::b:p::p, comp label7::b:p::p, comp button5::b:p::p, comp label4::b:p::p, comp passwordField1::b:p::p}, space u:::p, par b {comp textField6::b:p::p, comp button6::b:p::p, comp label5::b:::x}, space :p:42:p}}"
+					} ) {
+						name: "panel5"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "       邮箱 : "
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "   计算证书序列号 : "
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "key : "
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField6"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button5"
+							"text": "保存"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveKeyEmail", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button6"
+							"text": "计算并查询"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchSN", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JPasswordField" ) {
+							name: "passwordField1"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "North"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table2"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( "title=\"beijing\"" )
+									add( "从标题中搜索\"北京\"" )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "header=\"elastic\"" )
+									add( "从http头中搜索\"elastic\"" )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "body=\"网络空间测绘\"" )
+									add( "从html正文中搜索“网络空间测绘” " )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "fid=\"sSXXGNUO2FefBTcCLIT/2Q==\"" )
+									add( "查找相同的网站指纹" )
+									add( "搜索网站类型资产" )
+								} )
+								add( new java.util.Vector {
+									add( "domain=\"qq.com\"" )
+									add( "搜索根域名带有qq.com的网站" )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "icp=\"京ICP证030173号\"6" )
+									add( "查找备案号为“京ICP证030173号”的网站" )
+									add( "搜索网站类型资产" )
+								} )
+								add( new java.util.Vector {
+									add( "cloud_name=\"Aliyundun\" " )
+									add( "通过云服务名称搜索资产" )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "cname=\"ap21.inst.siteforce.com\"" )
+									add( "查找cname为\"ap21.inst.siteforce.com\"的网站" )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "product=\"NGINX\" " )
+									add( "搜索此产品的资产 " )
+									add( "个人版及以上可用 " )
+								} )
+								add( new java.util.Vector {
+									add( "banner=\"users\" && protocol=\"ftp\"" )
+									add( "搜索FTP协议中带有users文本的资产" )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "type=\"service\" " )
+									add( "搜索所有协议资产，支持subdomain和service两种 " )
+									add( "搜索所有协议资产 " )
+								} )
+								add( new java.util.Vector {
+									add( "server==\"Microsoft-IIS/10\"" )
+									add( "搜索IIS 10服务器 " )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "app=\"Microsoft-Exchange\" " )
+									add( "搜索Microsoft-Exchange设备" )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "org=\"LLC Baxet\"" )
+									add( "搜索指定udp协议的资产" )
+									add( "-" )
+								} )
+								add( new java.util.Vector {
+									add( "ip_ports=\"80,161\" " )
+									add( "搜索同时开放80和161端口的ip " )
+									add( "搜索同时开放80和161端口的ip资产(以ip为单位的资产数据)" )
+								} )
+								add( new java.util.Vector {
+									add( "ip_region=\"Zhejiang\" " )
+									add( "搜索指定行政区的ip资产(以ip为单位的资产数据) " )
+									add( "搜索指定行政区的资产 " )
+								} )
+							}, new java.util.Vector {
+								add( "例句(双击搜索|右键复制)" )
+								add( "用途说明" )
+								add( "标注" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"foreground": new java.awt.Color( 0, 0, 0, 255 )
+							"background": sfield java.awt.Color lightGray
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "首页"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "panel3"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table1"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "host" )
+								add( "ip" )
+								add( "port" )
+								add( "protocol" )
+								add( "server" )
+								add( "city" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"foreground": new java.awt.Color( 0, 0, 0, 255 )
+							"background": sfield java.awt.Color lightGray
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, comp label3:::p::p, space ::910:x}}"
+						"$verticalGroup": "par l {seq l {comp label3:::p::p, space :0:5:x}}"
+					} ) {
+						name: "panel4"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "by RobertTangNiJr"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "South"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "查询结果"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1030, 785 )
+		} )
+	}
+}
